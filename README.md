@@ -4,7 +4,7 @@ ExtenderSensorsIbox trata de obtener un extensor de sensores para el ibox a trav
 a que pìnes se conectan el VCC de cada sensor obteniendo así la posibilidad de encender cada sensor a traves de cada uno de ellos 
 para poder encender preguntar y capturar hum/temp de cada sensor, estos valores se almacenan en un buffer y se envia a traves de modbus.
 
-"""
+```cpp
 /*
  * PINES MODBUS
  * @TX_MODBUS 3
@@ -28,4 +28,4 @@ para poder encender preguntar y capturar hum/temp de cada sensor, estos valores 
  *   Ejemplos de esta trama serian: “I101S90F”,”I25S120F”,”I223LF”, etc. 
  *
  */
-"""
+```
