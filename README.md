@@ -22,7 +22,7 @@ para poder encender preguntar y capturar hum/temp de cada sensor, estos valores 
 /**
  * @brief readingModbus
  *
- *   La diferencia con los casos anteriores es en la trama para la comunicación, ahora es necesario enviar la dirección del esclavo, quedando la trama de la siguiente forma: \n
+ *   Quedando la trama de la siguiente forma: \n
  *   [Inicio de trama][Dirección][Función][Valor][Fin de trama] \n
  *   La dirección es un número entero e indica con cual esclavo nos queremos comunicar. \n
  *   Ejemplos de esta trama serian: “I101S90F”,”I25S120F”,”I223LF”, etc. 
