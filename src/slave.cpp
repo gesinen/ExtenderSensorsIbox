@@ -25,7 +25,7 @@ void initModbus()
   pinMode(EnTxPin, OUTPUT);
   digitalWrite(EnTxPin, LOW); // RS485 como receptor
   modbus.begin(9600);
-  modbus.setTimeout(100); // establecemos un tiempo de espera de 100ms
+  modbus.setTimeout(1000); // establecemos un tiempo de espera de 100ms
 }
 /**
  * @brief Get the Sensors Data buffer from all sht
@@ -71,6 +71,8 @@ void loop()
 {
   if (modbus.available())
   {
+    Serial.println(" TX available"); // inicio de trama
+
     if (modbus.read() == initPayloadMb) // Si recibimos el inicio de trama
     {
       uint8_t direccion = modbus.read(); // recibimos la direccion
